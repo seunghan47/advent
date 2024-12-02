@@ -5,6 +5,8 @@ import java.util.*;
 public class Main {
     public static void main(String [] args){
         Day1 day1 = new Day1();
-        day1.answer();
+        Day2 day2 = new Day2();
+//        day1.answer();
+        day2.answer();
     }
 }
