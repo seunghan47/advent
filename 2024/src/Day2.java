@@ -17,8 +17,10 @@ public class Day2 {
                 boolean increasing = false;
                 boolean decreasing = false;
                 int conditionmet = 0;
+                int badCounter = 0;
 
-
+                increasing = reports[1] - reports[0] > 0;
+                decreasing = reports[1] - reports[0] < 0;
 
                 for (int i = 1; i < reports.length; i++) {
                     if (Math.abs(reports[i] - reports[i-1]) > 3) break;
@@ -30,11 +32,13 @@ public class Day2 {
                     conditionmet++;
                 }
                 if (conditionmet == reports.length - 1) safeReports++;
-//                System.out.println(start++ + " " + safeReports);
             }
         } catch ( Exception e) {
             e.printStackTrace();
         }
         System.out.println(safeReports);
     }
+//    public int [] sort() {
+//
+//    }
 }
