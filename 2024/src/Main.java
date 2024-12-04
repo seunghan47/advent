@@ -9,5 +9,6 @@ public class Main {
 //        day1.answer();
 //        day2.answer();
         Day3.answer();
+//        System.out.println(Main.hi("Hello", new int[]{1, 2, 4}));
     }
 }
