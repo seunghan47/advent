@@ -7,6 +7,9 @@ public class Day4 {
         int [][] directions = {
                 {0, 1}, {0, -1}, {1, 0}, {-1, 0}, {-1, 1}, {-1, -1}, {1, 1}, {1, -1}
         };
+        int [][] direction = {
+                {1,1}, {-1, -1}, {-1, 1}, {1, -1}
+        };
         int lines = 0, ans = 0;
         char [][] grid = new char[140][140];
         try (BufferedReader br = new BufferedReader(new FileReader("./input4.txt"))){
